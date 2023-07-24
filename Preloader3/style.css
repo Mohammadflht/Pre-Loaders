@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #181818;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-shadow: inset 0 0 25px orange;
+    font-size: 16px;
+}
+h3 {
+    position: relative;
+    color: #272727;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    border-bottom: 12px solid #272727;
+    line-height: 1.4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+h3::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: orange;
+    border-bottom: 12px solid orange;
+    animation: load 3s linear infinite;
+    overflow: hidden;
+}
+@keyframes load{
+    0%{width: 0;}
+    85%{width: 100%;}
+}
+
