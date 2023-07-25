@@ -37,14 +37,7 @@ div.loader-outer {
     align-items: center;
     animation: rotate 2s both infinite;
 }
-.loder-inner-inner1 {
-    width: 30%;
-    height:30%;
-    border-radius: 50%;
-    border:10px solid #1f428e;
-    border-top: 10px solid transparent;
-    animation: rotate 2s linear infinite;
-}
+
 @keyframes rotate{
     0%{transform: rotate(0deg);}
     100%{transform: rotate(-360deg);}
